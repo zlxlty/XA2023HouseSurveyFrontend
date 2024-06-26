@@ -4,7 +4,8 @@
 技术栈主要包括：
 - Typescript
 - 前端框架 React.js (Next.js 历史版本用了，这一版因为要能被 Capacitor 编译成移动端原生应用所以移除了)
-- 状态管理库 SWR
+- 状态管理库 zustand
+- 数据获取库 swr
 - UI框架 Tailwind.css
 - 动画库 Framer Motion
 
