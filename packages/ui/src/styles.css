@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.profile-card-writing-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.gradient-border {
+    position: relative;
+    /* border-radius: var(--borderWidth); */
+}
+
+.gradient-border::after {
+    --borderWidth: 3px;
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 3);
+    width: calc(100% + var(--borderWidth) * 3);
+    background: linear-gradient(60deg, transparent, #a166ab, #5073b8, #1098ad, transparent, #07b39b, #6fba82);
+    filter: blur(8px);
+    opacity: .3;
+    border-radius: 0.86rem;
+    box-shadow: .2rem .2rem .5rem #8fb4da, -.2rem -.2rem .5rem #ffffff;
+    z-index: -1;
+    animation: animatedgradient 20s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+.mirro-avatar-border {
+    --borderWidth: 6px;
+    position: relative;
+    border-radius: 1.5rem;
+}
+
+.mirro-avatar-border::after {
+    content: '';
+    position: absolute;
+    top: calc(-1 * var(--borderWidth));
+    left: calc(-1 * var(--borderWidth));
+    height: calc(100% + var(--borderWidth) * 2);
+    width: calc(100% + var(--borderWidth) * 2);
+    background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b,transparent, #a166ab, #5073b8, #1098ad,transparent, #07b39b, #6fba82);
+    filter:blur(10px);
+    opacity:0.4;
+    border-radius: 1.5rem;
+    box-shadow: .2rem .2rem .5rem #bebebe, -.2rem -.2rem .5rem #ffffff;
+    z-index: -1;
+    animation: animatedgradient 5s ease alternate infinite;
+    background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-button {
+    background: linear-gradient(92.49deg, #8CA5FF 18.17%, #2B99FF 118.97%);
+    box-shadow: 8px 8px 16px #C9D9E8, inset 0px 4px 8px rgba(255, 255, 255, 0.41);
+}
+
+/* TODO */
+.gradient-button:active {
+    background: linear-gradient(92.49deg, #45517b 18.17%, #15497a 118.97%);
+    box-shadow: 8px 8px 16px #C9D9E8, inset 0px 4px 8px rgba(255, 255, 255, 0.41);
+}
+
+.white-button {
+    background: #F1F5F9;
+    box-shadow: 8px 8px 16px #C9D9E8, inset 0px 4px 8px rgba(255, 255, 255, 0.41);
+}
+
+/* Not too many browser support this yet but it's good to add! */
+@media (prefers-contrast: high) {
+    #dynamic-background {
+        display: none;
+    }
+}
+
+.slider {
+    appearance: none;
+    width: 10rem;
+    height: 0.25rem;
+    outline: none;
+    border-radius: 0.25rem;
+}
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #f44336;
+    border: 0.25rem solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.infinite-loop-slider .inner {
+    display: flex;
+    width: fit-content;
+    animation-name: tag-loop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: var(--direction);
+    animation-duration: var(--duration);
+}
+
+@keyframes tag-loop {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

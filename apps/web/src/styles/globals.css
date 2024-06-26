@@ -1,0 +1,52 @@
+body {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  /* mobile viewport bug fix */
+  min-height: -webkit-fill-available;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  /* padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left); */
+}
+
+.delete-circle {
+  border-radius: 50%;
+  background: #ff7575;
+  box-shadow: inset 8px 8px 16px #e36868, inset -8px -8px 16px #ff8282;
+}
+
+#root > div {
+  height: 100%;
+}
+
+@font-face {
+  font-family: Smiley Sans;
+  src: url('/fonts/SmileySans-Oblique.woff2');
+}
+
+@font-face{
+  font-family: Bungee Outline;
+  src:url('/fonts/BungeeOutline-Regular.ttf');
+}
+
+@font-face{
+  font-family: NeoX;
+  src:url('/fonts/NeoXDisplay1.4Web-Regular.woff2');
+}
+
+.nextui-avatar-img, a {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

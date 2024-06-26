@@ -1,0 +1,35 @@
+{
+  "cSpell.words": [
+    "clsx",
+    "Conv",
+    "followee",
+    "followees",
+    "HDRIURL",
+    "heroicons",
+    "hyperex",
+    "leancloud",
+    "MBTI",
+    "miniprogram",
+    "Mirro",
+    "nextui",
+    "OPENAI",
+    "panolens",
+    "Pikaso",
+    "Pressable",
+    "Queriable",
+    "Queriables",
+    "scroller",
+    "skybox",
+    "swiper",
+    "tailwindcss",
+    "unfollow",
+    "Wraper",
+    "zustand"
+  ],
+  "typescript.tsdk": "./apps/web/node_modules/typescript/lib",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "never",
+    "source.fixAll": "never"
+  }
+}

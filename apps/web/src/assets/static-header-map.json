@@ -1,0 +1,22 @@
+{
+  "mirro": {
+    "staticTitle":"镜身",
+    "description":"同步你的数据到数字化身",
+    "hasBackButton":false
+  },
+  "chat": {
+    "staticTitle":"对话",
+    "description":"最新消息",
+    "hasBackButton":false
+  },
+  "profile-settings": {
+    "staticTitle":"编辑资料",
+    "description":"对外显示的资料",
+    "hasBackButton":true
+  },
+  "profile":{
+    "staticTitle":"资料卡",
+    "description":"",
+    "hasBackButton":true
+  }
+}

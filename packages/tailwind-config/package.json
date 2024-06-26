@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-config",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tailwindcss-safe-area": "^0.2.2"
+  }
+}

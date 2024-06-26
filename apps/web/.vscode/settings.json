@@ -1,0 +1,18 @@
+{
+  "typescript.tsdk": "../../node_modules/.pnpm/typescript@4.9.5/node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "cSpell.words": [
+    "clsx",
+    "conv",
+    "Followee",
+    "followees",
+    "leancloud",
+    "mbti",
+    "miniprogram",
+    "Mirro",
+    "nextui",
+    "Pikaso",
+    "prerendering",
+    "Queriable"
+  ]
+}

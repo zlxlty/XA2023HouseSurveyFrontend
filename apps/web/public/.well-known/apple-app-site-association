@@ -1,0 +1,31 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": {
+      "appIDs": ["9W882B79LZ.cc.hyperex.mirro"],
+      "paths": [
+        "NOT /.well-known/*",
+        "*"
+      ],
+      "components": [
+        {
+          "/": "/.well-known/*",
+          "exclude": true
+        },
+        {
+          "/": "/*"
+        }
+      ]
+    }
+  },
+  "webcredentials": {
+    "apps": [
+      "9W882B79LZ.cc.hyperex.mirro"
+    ]
+  },
+  "appclips": {
+    "apps": [
+      "9W882B79LZ.cc.hyperex.mirro"
+    ]
+  }
+}

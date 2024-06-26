@@ -1,0 +1,42 @@
+{
+  "include": [
+    "types.d.ts",
+    // "**/*.ts",
+    // "**/*.tsx",
+    // ".next/types/**/*.ts",
+    "src"
+    // "src/app/discover/api",
+    // "src/mdx-components.jsx",
+    // "src/mdx-components.jsx",
+    // "src/components/box-loading"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#/*": ["src/*"]
+    },
+    "strictNullChecks": true,
+    
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "preserve",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": false
+  }
+}

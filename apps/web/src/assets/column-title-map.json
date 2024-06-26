@@ -1,0 +1,17 @@
+{
+  "username": "昵称",
+  "age": "年龄",
+  "birthDay": "生日",
+  "gender": "性别",
+  "school": "学校",
+  "hometown": "常驻",
+  "mbti": "MBTI",
+  "about": "关于我",
+  "wish": "我的愿望",
+  "more":"更多",
+  "statistic": {
+    "follower": "受关注量",
+    "replyByAI": "镜身回复",
+    "tag": "标签量"
+  }
+}
